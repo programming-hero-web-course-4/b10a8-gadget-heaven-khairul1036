@@ -6,7 +6,7 @@
       "category": "Smartphones",
       "price": 799.99,
       "description": "A powerful smartphone with a stunning display and excellent camera quality.",
-      "Specification": [
+      "specification": [
         "6.5-inch OLED Display",
         "128GB Storage",
         "12MP Rear Camera",
@@ -14,7 +14,7 @@
         "4000mAh Battery"
       ],
       "availability": true,
-      "rating": 4.5,
+      "rating": 3.5,
       "warranty_period": "2 years"
     },
     {
@@ -24,7 +24,7 @@
       "category": "Smartphones",
       "price": 999.99,
       "description": "Flagship smartphone with ultra-high performance and advanced camera setup.",
-      "Specification": [
+      "specification": [
         "6.8-inch AMOLED Display",
         "256GB Storage",
         "108MP Rear Camera",
@@ -42,7 +42,7 @@
       "category": "Smartphones",
       "price": 399.99,
       "description": "Affordable smartphone with essential features and reliable performance.",
-      "Specification": [
+      "specification": [
         "6.1-inch LCD Display",
         "64GB Storage",
         "12MP Rear Camera",
@@ -60,7 +60,7 @@
       "category": "Smartphones",
       "price": 699.99,
       "description": "Mid-range smartphone with an excellent camera and powerful processor.",
-      "Specification": [
+      "specification": [
         "6.4-inch Super AMOLED Display",
         "128GB Storage",
         "48MP Rear Camera",
@@ -78,7 +78,7 @@
       "category": "Smartphones",
       "price": 599.99,
       "description": "Compact smartphone with advanced features in a smaller size.",
-      "Specification": [
+      "specification": [
         "5.4-inch OLED Display",
         "128GB Storage",
         "12MP Rear Camera",
@@ -96,7 +96,7 @@
       "category": "Smartphones",
       "price": 1499.99,
       "description": "Folding smartphone with dual displays and a unique, futuristic design.",
-      "Specification": [
+      "specification": [
         "7.6-inch Foldable OLED Display",
         "512GB Storage",
         "48MP Rear Camera",
@@ -114,7 +114,7 @@
       "category": "Laptops",
       "price": 1199.99,
       "description": "High-performance gaming laptop with powerful GPU and high refresh rate display.",
-      "Specification": [
+      "specification": [
         "15.6-inch 144Hz Full HD Display",
         "Intel Core i7 Processor",
         "16GB RAM",
@@ -132,7 +132,7 @@
       "category": "Laptops",
       "price": 899.99,
       "description": "Slim and lightweight ultrabook designed for productivity and portability.",
-      "Specification": [
+      "specification": [
         "14-inch FHD Display",
         "Intel Core i5 Processor",
         "8GB RAM",
@@ -150,7 +150,7 @@
       "category": "Laptops",
       "price": 1499.99,
       "description": "Professional-grade laptop with high-end performance for multitasking and heavy workloads.",
-      "Specification": [
+      "specification": [
         "17-inch 4K UHD Display",
         "Intel Core i9 Processor",
         "32GB RAM",
@@ -168,7 +168,7 @@
       "category": "Laptops",
       "price": 1099.99,
       "description": "Reliable business laptop with powerful performance, long battery life, and advanced security features.",
-      "Specification": [
+      "specification": [
         "15.6-inch Full HD Display",
         "Intel Core i7 Processor",
         "16GB RAM",
@@ -187,7 +187,7 @@
       "category": "Smartwatches",
       "price": 199.99,
       "description": "Fitness smartwatch with heart rate monitor, GPS, and advanced activity tracking features.",
-      "Specification": [
+      "specification": [
         "1.4-inch AMOLED Display",
         "Heart Rate Monitor",
         "Built-in GPS",
@@ -205,7 +205,7 @@
       "category": "Smartwatches",
       "price": 299.99,
       "description": "Luxury smartwatch with elegant design, health tracking, and customizable watch faces.",
-      "Specification": [
+      "specification": [
         "1.2-inch OLED Display",
         "Blood Oxygen Sensor",
         "24/7 Heart Rate Monitoring",
@@ -223,7 +223,7 @@
       "category": "Smartwatches",
       "price": 249.99,
       "description": "Rugged smartwatch for outdoor activities with GPS tracking and military-grade durability.",
-      "Specification": [
+      "specification": [
         "1.6-inch LCD Display",
         "GPS and Altimeter",
         "Military-Grade Durability",
@@ -241,7 +241,7 @@
       "category": "Accessories",
       "price": 29.99,
       "description": "Fast wireless charging pad compatible with Qi-enabled devices for convenient charging.",
-      "Specification": [
+      "specification": [
         "10W Fast Charging",
         "Qi-Certified",
         "Non-Slip Design",
@@ -259,7 +259,7 @@
       "category": "Accessories",
       "price": 149.99,
       "description": "High-quality over-ear headphones with active noise cancellation and deep bass.",
-      "Specification": [
+      "specification": [
         "Active Noise Cancellation",
         "Bluetooth 5.0",
         "20-Hour Battery Life",
