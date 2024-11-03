@@ -1,0 +1,273 @@
+[
+    {
+      "product_id": "GAD001",
+      "product_title": "Smartphone X12",
+      "product_image": "https://i.ibb.co.com/7vD9BS2/Smartphone-X12.jpg",
+      "category": "Smartphones",
+      "price": 799.99,
+      "description": "A powerful smartphone with a stunning display and excellent camera quality.",
+      "Specification": [
+        "6.5-inch OLED Display",
+        "128GB Storage",
+        "12MP Rear Camera",
+        "5G Enabled",
+        "4000mAh Battery"
+      ],
+      "availability": true,
+      "rating": 4.5,
+      "warranty_period": "2 years"
+    },
+    {
+      "product_id": "GAD002",
+      "product_title": "Smartphone UltraMax 20",
+      "product_image": "https://i.ibb.co.com/vmxZdwr/Smartphone-Ultra-Max-20.webp",
+      "category": "Smartphones",
+      "price": 999.99,
+      "description": "Flagship smartphone with ultra-high performance and advanced camera setup.",
+      "Specification": [
+        "6.8-inch AMOLED Display",
+        "256GB Storage",
+        "108MP Rear Camera",
+        "5G Enabled",
+        "4500mAh Battery"
+      ],
+      "availability": true,
+      "rating": 4.8,
+      "warranty_period": "2 years"
+    },
+    {
+      "product_id": "GAD003",
+      "product_title": "Smartphone Lite SE",
+      "product_image": "https://i.ibb.co.com/gF7tYYM/Smartphone-Lite-SE.jpg",
+      "category": "Smartphones",
+      "price": 399.99,
+      "description": "Affordable smartphone with essential features and reliable performance.",
+      "Specification": [
+        "6.1-inch LCD Display",
+        "64GB Storage",
+        "12MP Rear Camera",
+        "4G Enabled",
+        "3000mAh Battery"
+      ],
+      "availability": true,
+      "rating": 4.2,
+      "warranty_period": "1 year"
+    },
+    {
+      "product_id": "GAD004",
+      "product_title": "Smartphone Pro Z",
+      "product_image": "https://i.ibb.co.com/fFfMZDh/Smartphone-Pro-Z.jpg",
+      "category": "Smartphones",
+      "price": 699.99,
+      "description": "Mid-range smartphone with an excellent camera and powerful processor.",
+      "Specification": [
+        "6.4-inch Super AMOLED Display",
+        "128GB Storage",
+        "48MP Rear Camera",
+        "5G Enabled",
+        "4200mAh Battery"
+      ],
+      "availability": false,
+      "rating": 4.4,
+      "warranty_period": "1 year"
+    },
+    {
+      "product_id": "GAD005",
+      "product_title": "Smartphone Mini 9",
+      "product_image": "https://i.ibb.co.com/LrMnBNy/Smartphone-Mini-9.webp",
+      "category": "Smartphones",
+      "price": 599.99,
+      "description": "Compact smartphone with advanced features in a smaller size.",
+      "Specification": [
+        "5.4-inch OLED Display",
+        "128GB Storage",
+        "12MP Rear Camera",
+        "5G Enabled",
+        "3100mAh Battery"
+      ],
+      "availability": true,
+      "rating": 4.3,
+      "warranty_period": "1 year"
+    },
+    {
+      "product_id": "GAD006",
+      "product_title": "Smartphone Fold X",
+      "product_image": "https://i.ibb.co.com/StB8P6h/Smartphone-Fold-X.webp",
+      "category": "Smartphones",
+      "price": 1499.99,
+      "description": "Folding smartphone with dual displays and a unique, futuristic design.",
+      "Specification": [
+        "7.6-inch Foldable OLED Display",
+        "512GB Storage",
+        "48MP Rear Camera",
+        "5G Enabled",
+        "4500mAh Battery"
+      ],
+      "availability": true,
+      "rating": 4.7,
+      "warranty_period": "2 years"
+    },
+    {
+      "product_id": "GAD007",
+      "product_title": "Gaming Laptop GX500",
+      "product_image": "https://i.ibb.co.com/rsYhX3P/Gaming-Laptop-GX500.jpg",
+      "category": "Laptops",
+      "price": 1199.99,
+      "description": "High-performance gaming laptop with powerful GPU and high refresh rate display.",
+      "Specification": [
+        "15.6-inch 144Hz Full HD Display",
+        "Intel Core i7 Processor",
+        "16GB RAM",
+        "512GB SSD",
+        "NVIDIA RTX 3060 Graphics Card"
+      ],
+      "availability": true,
+      "rating": 4.8,
+      "warranty_period": "2 years"
+    },
+    {
+      "product_id": "GAD008",
+      "product_title": "Ultrabook Slim X14",
+      "product_image": "https://i.ibb.co.com/34kqQWd/Ultrabook-Slim-X14.webp",
+      "category": "Laptops",
+      "price": 899.99,
+      "description": "Slim and lightweight ultrabook designed for productivity and portability.",
+      "Specification": [
+        "14-inch FHD Display",
+        "Intel Core i5 Processor",
+        "8GB RAM",
+        "256GB SSD",
+        "Integrated Graphics"
+      ],
+      "availability": true,
+      "rating": 4.5,
+      "warranty_period": "1 year"
+    },
+    {
+      "product_id": "GAD009",
+      "product_title": "Professional Laptop WorkPro 17",
+      "product_image": "https://i.ibb.co.com/LQCBP4J/Professional-Laptop-Work-Pro-17.png",
+      "category": "Laptops",
+      "price": 1499.99,
+      "description": "Professional-grade laptop with high-end performance for multitasking and heavy workloads.",
+      "Specification": [
+        "17-inch 4K UHD Display",
+        "Intel Core i9 Processor",
+        "32GB RAM",
+        "1TB SSD",
+        "NVIDIA Quadro Graphics"
+      ],
+      "availability": false,
+      "rating": 4.6,
+      "warranty_period": "3 years"
+    },
+    {
+      "product_id": "GAD0010",
+      "product_title": "Business Laptop ProBook 15",
+      "product_image": "https://i.ibb.co.com/yWx06kX/Business-Laptop-Pro-Book-15.jpg",
+      "category": "Laptops",
+      "price": 1099.99,
+      "description": "Reliable business laptop with powerful performance, long battery life, and advanced security features.",
+      "Specification": [
+        "15.6-inch Full HD Display",
+        "Intel Core i7 Processor",
+        "16GB RAM",
+        "512GB SSD",
+        "Fingerprint Reader",
+        "Windows 11 Pro"
+      ],
+      "availability": true,
+      "rating": 4.7,
+      "warranty_period": "3 years"
+    },
+    {
+      "product_id": "GAD0011",
+      "product_title": "Smartwatch FitPro X",
+      "product_image": "https://i.ibb.co.com/v3ChQzH/Smartwatch-Fit-Pro-X.webp",
+      "category": "Smartwatches",
+      "price": 199.99,
+      "description": "Fitness smartwatch with heart rate monitor, GPS, and advanced activity tracking features.",
+      "Specification": [
+        "1.4-inch AMOLED Display",
+        "Heart Rate Monitor",
+        "Built-in GPS",
+        "7-Day Battery Life",
+        "Water Resistant (IP68)"
+      ],
+      "availability": true,
+      "rating": 4.5,
+      "warranty_period": "1 year"
+    },
+    {
+      "product_id": "GAD0012",
+      "product_title": "Smartwatch Luxe Edition",
+      "product_image": "https://i.ibb.co.com/M2FjfRp/Smartwatch-Luxe-Edition.jpg",
+      "category": "Smartwatches",
+      "price": 299.99,
+      "description": "Luxury smartwatch with elegant design, health tracking, and customizable watch faces.",
+      "Specification": [
+        "1.2-inch OLED Display",
+        "Blood Oxygen Sensor",
+        "24/7 Heart Rate Monitoring",
+        "5-Day Battery Life",
+        "Interchangeable Straps"
+      ],
+      "availability": true,
+      "rating": 4.7,
+      "warranty_period": "2 years"
+    },
+    {
+      "product_id": "GAD0013",
+      "product_title": "Smartwatch Sport Xtreme",
+      "product_image": "https://i.ibb.co.com/6RtzDsd/Smartwatch-Sport-Xtreme.jpg",
+      "category": "Smartwatches",
+      "price": 249.99,
+      "description": "Rugged smartwatch for outdoor activities with GPS tracking and military-grade durability.",
+      "Specification": [
+        "1.6-inch LCD Display",
+        "GPS and Altimeter",
+        "Military-Grade Durability",
+        "10-Day Battery Life",
+        "Water Resistant (up to 50m)"
+      ],
+      "availability": false,
+      "rating": 4.6,
+      "warranty_period": "2 years"
+    },
+    {
+      "product_id": "GAD0014",
+      "product_title": "Wireless Charging Pad",
+      "product_image": "https://i.ibb.co.com/28Byyz3/Wireless-Charging-Pad.webp",
+      "category": "Accessories",
+      "price": 29.99,
+      "description": "Fast wireless charging pad compatible with Qi-enabled devices for convenient charging.",
+      "Specification": [
+        "10W Fast Charging",
+        "Qi-Certified",
+        "Non-Slip Design",
+        "LED Indicator Light",
+        "USB-C Input"
+      ],
+      "availability": true,
+      "rating": 4.4,
+      "warranty_period": "1 year"
+    },
+    {
+      "product_id": "GAD0015",
+      "product_title": "Noise-Cancelling Over-Ear Headphones",
+      "product_image": "https://i.ibb.co.com/DRR53bB/Noise-Cancelling-Over-Ear-Headphones.webp",
+      "category": "Accessories",
+      "price": 149.99,
+      "description": "High-quality over-ear headphones with active noise cancellation and deep bass.",
+      "Specification": [
+        "Active Noise Cancellation",
+        "Bluetooth 5.0",
+        "20-Hour Battery Life",
+        "Built-in Microphone",
+        "Foldable Design"
+      ],
+      "availability": true,
+      "rating": 4.6,
+      "warranty_period": "1 year"
+    }
+  ]
