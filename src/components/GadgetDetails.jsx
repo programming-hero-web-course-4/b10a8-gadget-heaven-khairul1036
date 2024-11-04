@@ -5,6 +5,8 @@ import { IoIosHeartEmpty } from "react-icons/io";
 import ReactStars from "react-rating-stars-component";
 import { addToStoredCartList, addToStoredWishList } from './utility/addToDb';
 import Navbar from './Navbar';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 const GadgetDetails = () => {
@@ -24,7 +26,9 @@ const GadgetDetails = () => {
 
     // const [cartCount, setCartCount] = useState(0)
     const handleCartButton = (product_id) =>{
+        toast.success("Item added to Cart")
         addToStoredCartList(product_id);
+        
         // setCartCount(cartCount+1);
     }
 
@@ -78,6 +82,19 @@ const GadgetDetails = () => {
             </div>
         </div>
         {/* <Navbar cartCount={cartCount}></Navbar> */}
+
+        <ToastContainer
+        position="top-center"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="light"
+        />
         </>
     );
 };
