@@ -1,6 +1,6 @@
 
 const getStoredCartList = () => {
-    const storedListStr = localStorage.getItem('product_id');
+    const storedListStr = localStorage.getItem('cart-list');
     if(storedListStr){
         const storedList = JSON.parse(storedListStr);
         return storedList;
@@ -15,7 +15,26 @@ const addToStoredCartList = (id) => {
 
     storedList.push(id);
     const storedListStr = JSON.stringify(storedList);
-    localStorage.setItem('product_id',storedListStr);
+    localStorage.setItem('cart-list',storedListStr);
 }
 
-export {addToStoredCartList,getStoredCartList}
+const getStoredWishList = () => {
+    const storedWishListStr = localStorage.getItem('wish-list');
+    if (storedWishListStr) {
+        const storedWishList = JSON.parse(storedWishListStr);
+        return storedWishList;
+    }
+    else {
+        return [];
+    }
+}
+
+const addToStoredWishList = (id) => {
+    const storedWishList = getStoredWishList();
+
+    storedWishList.push(id);
+    const storedWishListStr = JSON.stringify(storedWishList);
+    localStorage.setItem('wish-list', storedWishListStr);
+}
+
+export {addToStoredCartList,getStoredCartList,getStoredWishList,addToStoredWishList}

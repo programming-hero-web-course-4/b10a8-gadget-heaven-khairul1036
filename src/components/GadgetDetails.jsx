@@ -3,7 +3,7 @@ import { useLoaderData, useParams } from 'react-router-dom';
 import { LuShoppingCart } from "react-icons/lu";
 import { IoIosHeartEmpty } from "react-icons/io";
 import ReactStars from "react-rating-stars-component";
-import { addToStoredCartList } from './utility/addToDb';
+import { addToStoredCartList, addToStoredWishList } from './utility/addToDb';
 import Navbar from './Navbar';
 
 
@@ -16,6 +16,11 @@ const GadgetDetails = () => {
     // const [cartCount, setCartCount] = useState(0)
     const handleCartButton = (product_id) =>{
         addToStoredCartList(product_id);
+        // setCartCount(cartCount+1);
+    }
+
+    const handleWishListButton = (product_id) =>{
+        addToStoredWishList(product_id)
         // setCartCount(cartCount+1);
     }
 
@@ -58,10 +63,8 @@ const GadgetDetails = () => {
                 </p>
                 
                 <div className='flex items-center gap-5'>
-                    {/* <CartCountContext.Provider value={[cartCount, setCartCount]}> */}
-                        <button onClick={()=>handleCartButton(product_id)} className='bg-[#9538E2] text-white px-5 py-2 rounded-xl flex items-center justify-between gap-2'>Add To Card <span><LuShoppingCart /></span></button>
-                    {/* </CartCountContext.Provider> */}
-                    <button className="border p-2 rounded-full text-xl"><IoIosHeartEmpty /></button>
+                    <button onClick={()=>handleCartButton(product_id)} className='bg-[#9538E2] text-white px-5 py-2 rounded-xl flex items-center justify-between gap-2'>Add To Card <span><LuShoppingCart /></span></button>
+                    <button onClick={()=>handleWishListButton(product_id)} className="border p-2 rounded-full text-xl"><IoIosHeartEmpty /></button>
                 </div>
             </div>
         </div>
