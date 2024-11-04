@@ -2,9 +2,9 @@ import React from 'react';
 import { RxCross1 } from "react-icons/rx";
 
 
-const SingleCart = ({cartItem}) => {
+const SingleCart = ({cartItem,handleDeleteCartListItem}) => {
 
-    const {product_image,product_title,description,price} = cartItem;
+    const {product_id,product_image,product_title,description,price} = cartItem;
     return (
         <>
         <div className='bg-white flex justify-between items-center gap-5 rounded-xl p-5 mb-8'>
@@ -18,7 +18,9 @@ const SingleCart = ({cartItem}) => {
                     <p className='text-lg font-bold'>Price: $ {price}</p>
                 </div>
             </div>
-            <div className='text-red-600 text-3xl border border-red-600 p-2 rounded-full'><RxCross1 /></div>
+            <div>
+                <button onClick={()=>handleDeleteCartListItem(product_id)} className='text-red-600 text-3xl border border-red-600 p-2 rounded-full'><RxCross1 /></button>
+            </div>
         </div>
         </>
     );

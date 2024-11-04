@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useLoaderData } from 'react-router-dom';
-import { getStoredCartList } from './utility/addToDb';
+import { getStoredCartList, updateCartList } from './utility/addToDb';
 import { FaSort } from "react-icons/fa";
 import SingleCart from './SingleCart';
 
@@ -24,6 +24,14 @@ const CartList = () => {
         setCartItems(sortedProducts);
     };
 
+    const handleDeleteCartListItem = (product_id) =>{
+        const storedCartList = getStoredCartList();
+        const updatedCartList = storedCartList.filter(id => id !== product_id);
+        updateCartList(updatedCartList)
+        const remainingCartItems = cartItems.filter(product => product.product_id !== product_id);
+        setCartItems(remainingCartItems);
+    }
+
     return (
         <>
         <div className='max-w-screen-2xl mx-auto flex justify-between items-center py-10'>
@@ -39,7 +47,7 @@ const CartList = () => {
         </div>
         <div className='max-w-screen-2xl mx-auto '>
             {
-                cartItems.map(cartItem=> <SingleCart key={cartItem.product_id} cartItem={cartItem}></SingleCart>)
+                cartItems.map(cartItem=> <SingleCart key={cartItem.product_id} cartItem={cartItem} handleDeleteCartListItem={handleDeleteCartListItem}></SingleCart>)
             }
         </div>
         </>

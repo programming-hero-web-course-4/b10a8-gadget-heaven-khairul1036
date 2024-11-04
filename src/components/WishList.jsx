@@ -16,9 +16,7 @@ const WishList = () => {
     const handleDeleteWishListItem = (product_id) =>{
         const storedWishList = getStoredWishList();
         const updatedWishList = storedWishList.filter(id => id !== product_id);
-
         updateWishList(updatedWishList)
-
         const remainingWishItems = wishListItems.filter(product => product.product_id !== product_id);
         setWishListItems(remainingWishItems);
     }

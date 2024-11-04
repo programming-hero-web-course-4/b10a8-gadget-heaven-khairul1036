@@ -18,6 +18,10 @@ const addToStoredCartList = (id) => {
     localStorage.setItem('cart-list',storedListStr);
 }
 
+const updateCartList = (cartList) => {
+    localStorage.setItem('cart-list', JSON.stringify(cartList));
+};
+
 const getStoredWishList = () => {
     const storedWishListStr = localStorage.getItem('wish-list');
     if (storedWishListStr) {
@@ -41,4 +45,4 @@ const updateWishList = (wishList) => {
     localStorage.setItem('wish-list', JSON.stringify(wishList));
 };
 
-export {addToStoredCartList,getStoredCartList,getStoredWishList,addToStoredWishList,updateWishList}
+export {addToStoredCartList,getStoredCartList,updateCartList,getStoredWishList,addToStoredWishList,updateWishList}
