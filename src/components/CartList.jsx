@@ -3,6 +3,7 @@ import { useLoaderData } from 'react-router-dom';
 import { getStoredCartList, updateCartList } from './utility/addToDb';
 import { FaSort } from "react-icons/fa";
 import SingleCart from './SingleCart';
+import Empty from './Empty';
 
 
 const CartList = () => {
@@ -47,7 +48,7 @@ const CartList = () => {
         </div>
         <div className='max-w-screen-2xl mx-auto '>
             {
-                cartItems.map(cartItem=> <SingleCart key={cartItem.product_id} cartItem={cartItem} handleDeleteCartListItem={handleDeleteCartListItem}></SingleCart>)
+                cartItems.length===0?(<Empty></Empty>):(cartItems.map(cartItem=> <SingleCart key={cartItem.product_id} cartItem={cartItem} handleDeleteCartListItem={handleDeleteCartListItem}></SingleCart>))
             }
         </div>
         </>

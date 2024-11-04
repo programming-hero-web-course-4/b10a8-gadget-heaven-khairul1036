@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { addToStoredWishList, getStoredWishList, updateWishList } from './utility/addToDb';
 import { useLoaderData } from 'react-router-dom';
 import SingleWishList from './SingleWishList';
+import Empty from './Empty';
 
 const WishList = () => {
     const products = useLoaderData();
@@ -28,7 +29,7 @@ const WishList = () => {
         </div>
         <div className='max-w-screen-2xl mx-auto '>
             {
-                wishListItems.map(wishItem=> <SingleWishList key={wishItem.product_id} wishItem={wishItem} handleDeleteWishListItem={handleDeleteWishListItem}></SingleWishList>)
+                wishListItems.length===0?(<Empty></Empty>):(wishListItems.map(wishItem=> <SingleWishList key={wishItem.product_id} wishItem={wishItem} handleDeleteWishListItem={handleDeleteWishListItem}></SingleWishList>))
             }
         </div>
         </>

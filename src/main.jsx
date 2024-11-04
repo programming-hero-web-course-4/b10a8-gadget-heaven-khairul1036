@@ -11,6 +11,7 @@ import Root from './components/Root';
 import ErrorPage from './components/ErrorPage';
 import Dashboard from './components/Dashboard';
 import GadgetDetails from './components/GadgetDetails';
+import Contact from './components/Contact';
 
 const router = createBrowserRouter([
   {
@@ -35,6 +36,10 @@ const router = createBrowserRouter([
         path:'/dashboard',
         element:<Dashboard></Dashboard>,
         loader:()=>fetch('./products.json')
+      },
+      {
+        path:'/contact',
+        element:<Contact></Contact>
       }
     ]
   },

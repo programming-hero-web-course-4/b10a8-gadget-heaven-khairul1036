@@ -13,6 +13,7 @@ console.log(cartCount);
         <li><NavLink to="/">Home</NavLink></li>
         <li><NavLink to="/statistics">Statistics</NavLink></li>
         <li><NavLink to="/dashboard">Dashboard</NavLink></li>
+        <li><NavLink to="/contact">Contact</NavLink></li>
     </>
 
     // const [storageAddtoCartLength, setStorageAddtoCartLength] = useState(0);

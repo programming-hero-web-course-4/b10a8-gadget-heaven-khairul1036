@@ -1,4 +1,4 @@
-import React, { createContext, useState } from 'react';
+import React, { createContext, useState, useEffect } from 'react';
 import { useLoaderData, useParams } from 'react-router-dom';
 import { LuShoppingCart } from "react-icons/lu";
 import { IoIosHeartEmpty } from "react-icons/io";
@@ -10,6 +10,15 @@ import Navbar from './Navbar';
 const GadgetDetails = () => {
     const {product_id} = useParams();
     const data = useLoaderData();
+    // console.log("what is: ",data);
+
+    // const [datas, setData] = useState([]);
+    // useEffect(()=>{
+    //     fetch('./products.json')
+    //     .then(res=>res.json())
+    //     .then(data=>setData(data))
+    // },[]);
+    
     const products = data.find(product => product.product_id === product_id);
     const {product_title,price,product_image,availability,description,specification,rating} = products;
 
@@ -21,7 +30,7 @@ const GadgetDetails = () => {
 
     const handleWishListButton = (product_id) =>{
         addToStoredWishList(product_id)
-        // setCartCount(cartCount+1);
+        // setCartCount(cartCount+1);       
     }
 
 
@@ -64,7 +73,7 @@ const GadgetDetails = () => {
                 
                 <div className='flex items-center gap-5'>
                     <button onClick={()=>handleCartButton(product_id)} className='bg-[#9538E2] text-white px-5 py-2 rounded-xl flex items-center justify-between gap-2'>Add To Card <span><LuShoppingCart /></span></button>
-                    <button onClick={()=>handleWishListButton(product_id)} className="border p-2 rounded-full text-xl"><IoIosHeartEmpty /></button>
+                    <button id='wishBtnId' onClick={()=>handleWishListButton(product_id)} className="border p-2 rounded-full text-xl"><IoIosHeartEmpty /></button>
                 </div>
             </div>
         </div>
