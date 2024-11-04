@@ -8,7 +8,7 @@ const Product = ({product}) => {
             <img className="rounded-xl" src={product_image} alt="" />
             <h1 className="font-bold text-xl">{product_title}</h1>
             <p className="text-gray-600">Price: {price}k</p>
-            <Link to={`/gadget-details/${product_id}`}><button className="border border-[#9538E2] text-[#9538E2] px-5 py-2 rounded-xl hover:bg-[#9538E2] hover:text-white">View Details</button></Link>
+            <Link to={`/product-details/${product_id}`}><button className="border border-[#9538E2] text-[#9538E2] px-5 py-2 rounded-xl hover:bg-[#9538E2] hover:text-white">View Details</button></Link>
         </div>
     );
 };

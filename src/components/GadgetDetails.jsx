@@ -1,18 +1,24 @@
-import React from 'react';
+import React, { createContext, useState } from 'react';
 import { useLoaderData, useParams } from 'react-router-dom';
 import { LuShoppingCart } from "react-icons/lu";
 import { IoIosHeartEmpty } from "react-icons/io";
 import ReactStars from "react-rating-stars-component";
-import { render } from "react-dom";
+import { addToStoredCartList } from './utility/addToDb';
+import Navbar from './Navbar';
+
 
 const GadgetDetails = () => {
     const {product_id} = useParams();
-
     const data = useLoaderData();
-    
     const products = data.find(product => product.product_id === product_id);
-
     const {product_title,price,product_image,availability,description,specification,rating} = products;
+
+    // const [cartCount, setCartCount] = useState(0)
+    const handleCartButton = (product_id) =>{
+        addToStoredCartList(product_id);
+        // setCartCount(cartCount+1);
+    }
+
 
     return (
         <>
@@ -52,11 +58,14 @@ const GadgetDetails = () => {
                 </p>
                 
                 <div className='flex items-center gap-5'>
-                    <button className='bg-[#9538E2] text-white px-5 py-2 rounded-xl flex items-center justify-between gap-2'>Add To Card <span><LuShoppingCart /></span></button>
+                    {/* <CartCountContext.Provider value={[cartCount, setCartCount]}> */}
+                        <button onClick={()=>handleCartButton(product_id)} className='bg-[#9538E2] text-white px-5 py-2 rounded-xl flex items-center justify-between gap-2'>Add To Card <span><LuShoppingCart /></span></button>
+                    {/* </CartCountContext.Provider> */}
                     <button className="border p-2 rounded-full text-xl"><IoIosHeartEmpty /></button>
                 </div>
             </div>
         </div>
+        {/* <Navbar cartCount={cartCount}></Navbar> */}
         </>
     );
 };
