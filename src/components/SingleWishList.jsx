@@ -1,8 +1,8 @@
 import React from 'react';
 import { RxCross1 } from "react-icons/rx";
 
-const SingleWishList = ({wishItem}) => {
-    const {product_image,product_title,description,price} = wishItem;
+const SingleWishList = ({wishItem,handleDeleteWishListItem}) => {
+    const {product_id,product_image,product_title,description,price} = wishItem;
     return (
         <>
         <div className='bg-white flex justify-between items-center gap-5 rounded-xl p-5 mb-8'>
@@ -16,7 +16,9 @@ const SingleWishList = ({wishItem}) => {
                     <p className='text-lg font-bold'>Price: $ {price}</p>
                 </div>
             </div>
-            <div className='text-red-600 text-3xl border border-red-600 p-2 rounded-full'><RxCross1 /></div>
+            <div>
+                <button onClick={()=>handleDeleteWishListItem(product_id)} className='text-red-600 text-3xl border border-red-600 p-2 rounded-full'><RxCross1 /></button>
+            </div>
         </div>
         </>
     );
