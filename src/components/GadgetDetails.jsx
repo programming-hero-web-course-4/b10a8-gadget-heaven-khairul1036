@@ -34,10 +34,6 @@ const GadgetDetails = () => {
         
     },[datas.length])
     
-    
-    // const {product_title,price,product_image,availability,description,specification,rating} = products;
-
-    // const [cartCount, setCartCount] = useState(0)
     const handleCartButton = (product_id) => {
         const getProductId = getStoredCartList();
 
@@ -49,7 +45,6 @@ const GadgetDetails = () => {
         }
     };
     
-
     const handleWishListButton = (product_id) => {
         const getProductId = getStoredWishList();
     

@@ -7,14 +7,20 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const WishList = () => {
-    const products = useLoaderData();
+    const [products, setProducts] = useState([]);
     const [wishListItems, setWishListItems] = useState([]);
+
+    useEffect(()=>{
+        fetch('../../products.json')
+        .then(res=>res.json())
+        .then(data=>setProducts(data))
+    },[]);
 
     useEffect(()=>{
         const storedWishList = getStoredWishList();
         const wishList = products.filter(product => storedWishList.includes(product.product_id))
         setWishListItems(wishList);
-    },[])
+    },[products])
 
     const handleDeleteWishListItem = (product_id) =>{
         toast.warning('Wish Item Deleted')

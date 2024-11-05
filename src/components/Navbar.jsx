@@ -1,7 +1,10 @@
 import { useLocation } from "react-router-dom";
 import './NavLink.css'
+
 import { Link, NavLink } from "react-router-dom";
-import './NavHome.css';
+import './NavHome.css'
+import { useContext, useEffect, useState } from "react";
+import { getStoredCartList, getStoredWishList } from './utility/addToDb';
 import NavItems from "./NavItems";
 
 const Navbar = () => {

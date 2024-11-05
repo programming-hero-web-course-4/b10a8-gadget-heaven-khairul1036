@@ -10,14 +10,21 @@ import { FcOk } from "react-icons/fc";
 
 
 const CartList = () => {
-    const products = useLoaderData();
+    const [products, setProducts] = useState([]);
+
     const [cartItems, setCartItems] = useState([]);
+
+    useEffect(()=>{
+        fetch('../../products.json')
+        .then(res=>res.json())
+        .then(data=>setProducts(data))
+    },[]);
 
     useEffect(()=>{
         const storedCartList = getStoredCartList();
         const cartList = products.filter(product => storedCartList.includes(product.product_id))
         setCartItems(cartList);
-    },[])
+    },[products])
 
     // calculate total price 
     const totalPrice = cartItems.reduce((sum, cartItems) => sum + cartItems.price, 0);
