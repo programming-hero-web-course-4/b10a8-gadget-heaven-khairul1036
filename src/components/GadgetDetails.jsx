@@ -60,13 +60,14 @@ const GadgetDetails = () => {
 
     return (
         <>
-        <div className="bg-[#9538E2] text-center pt-16 pb-72">
-            <div className="w-2/3 mx-auto text-white space-y-5">
-                <h1 className="text-5xl font-bold">Product Details</h1>
-                <p className="px-60">Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!</p>
+        <div className="bg-[#9538E2] text-center pt-5 lg:pt-16 pb-32 lg:pb-72">
+            <div className="lg:w-2/3 mx-auto text-white space-y-5">
+                <h1 className="text-2xl lg:text-5xl font-bold">Product Details</h1>
+                <p className="px-5 lg:px-60">Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!</p>
             </div>
         </div>
-        <div className="max-w-screen-2xl mx-auto flex gap-20 rounded-xl border-2 border-white bg-white p-5 relative bottom-52">
+
+        <div className="max-w-screen-2xl lg:mx-auto mx-5 lg:flex gap-20 rounded-xl border-2 border-white bg-white p-5 relative bottom-20 lg:bottom-52">
             <div className='w-1/3'>
                 <img src={dataDetails?.product_image} alt="image" />
             </div>

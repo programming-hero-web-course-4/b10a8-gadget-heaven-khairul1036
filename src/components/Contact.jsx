@@ -6,14 +6,14 @@ const Contact = () => {
 
     return (
         <>
-        <div className="bg-[#9538E2] text-center py-16">
-            <div className="w-2/3 mx-auto text-white space-y-5">
-                <h1 className="text-5xl font-bold">Contact</h1>
-                <p className="px-60">Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!</p>
+        <div className="bg-[#9538E2] text-center py-5 lg:py-16">
+            <div className="lg:w-2/3 mx-auto text-white space-y-5">
+                <h1 className="text-3xl lg:text-5xl font-bold">Contact</h1>
+                <p className="text-sm lg:text-base px-5 lg:px-60">Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!</p>
             </div>
         </div>
-        <div className="max-w-screen-2xl mx-auto py-10 flex justify-between bg-white p-5 rounded-xl my-10">
-            <div className='w-1/2'>
+        <div className="max-w-screen-2xl mx-5 lg:mx-auto py-10 lg:flex justify-between bg-white p-5 rounded-xl my-10">
+            <div className='lg:w-1/2'>
                 <form action="">
                     <div class="mb-4">
                         <label for="name" class="block text-gray-700">Name</label>
@@ -32,7 +32,7 @@ const Contact = () => {
                     </div>
                 </form>
             </div>
-            <div>
+            <div className='hidden lg:block'>
                 <iframe 
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d116833.83187878219!2d90.33728799397399!3d23.78097572837469!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8b087026b81%3A0x8fa563bbdd5904c2!2sDhaka!5e0!3m2!1sen!2sbd!4v1730743754648!5m2!1sen!2sbd" 
                     width="600" 

@@ -23,7 +23,7 @@ const NavItems = () => {
     },[])
     return (
         <>
-        <div className="flex items-center gap-5">
+        <div className="flex items-center pt-5 gap-5">
             <div className="">
                 <div className="border p-2 rounded-full text-xl"><LuShoppingCart /></div>
                 <span className="text-black bg-white font-semibold relative bottom-12 left-10 px-[2px] rounded-full">{storageAddtoCartLength}</span>

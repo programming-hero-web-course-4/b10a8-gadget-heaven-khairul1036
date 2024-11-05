@@ -76,9 +76,9 @@ const Products = () => {
     return (
         <>
         <div className="max-w-screen-2xl mx-auto pb-20">
-            <h1 className="font-bold text-3xl text-center pb-10">Explore Cutting-Edge Gadgets</h1>
-            <div className="flex gap-10">
-                <div className="w-2/12">
+            <h1 className="font-bold text-2xl px-5 lg:text-3xl text-center pb-10">Explore Cutting-Edge Gadgets</h1>
+            <div className="lg:flex gap-10">
+                <div className="lg:w-2/12 px-5 pb-8 lg:pb-0">
                     <div className="bg-white rounded-xl p-5">
                     {productsCategory.map((category) => (
                             <div onClick={() => handleCategoryClick(category.category)} 
@@ -88,7 +88,7 @@ const Products = () => {
                     ))}
                     </div>
                 </div>
-                <div className="w-10/12 grid grid-cols-3 gap-10">
+                <div className="lg:w-10/12 grid grid-cols-1 lg:grid-cols-3 gap-5 px-5 lg:gap-10">
                 {
                     currProducts.length===0?(<Empty></Empty>):(currProducts.map(product=> <Product key={product.product_id} product={product}></Product>))
                 }

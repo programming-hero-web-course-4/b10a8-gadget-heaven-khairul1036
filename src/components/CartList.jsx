@@ -50,20 +50,20 @@ const CartList = () => {
 
     return (
         <>
-        <div className='max-w-screen-2xl mx-auto flex justify-between items-center py-10'>
-            <h1 className='text-2xl font-bold'>Cart</h1>
-            <div className='flex justify-between items-center gap-8'>
-                <h1 className='text-2xl font-bold'>Total cost: {totalPrice.toFixed(2)}</h1>
-                <div className='flex justify-between items-center border border-[#9538E2] text-[#9538E2] px-5 py-2 rounded-full'>
-                    <button onClick={sortByPrice}>Sort by Price</button>
-                    <div><FaSort /></div>
-                </div>
+        <div className='max-w-screen-2xl mx-auto lg:flex justify-between items-center py-10'>
+            <h1 className='text-2xl text-center font-bold lg:text-left'>Cart</h1>
+            <div className='lg:flex justify-between items-center gap-8'>
+                <h1 className='text-base text-center lg:text-left lg:text-2xl font-bold py-3 lg:py-0'>Total cost: {totalPrice.toFixed(2)}</h1>
 
-                <button onClick={()=> {
-                    handleClearData();
-                    document.getElementById('my_modal_1').showModal();
-                }}
-                className='bg-[#9538E2] text-white px-5 py-2 rounded-full' disabled={totalPrice === 0}>Purchase</button>
+                <div className='flex items-center gap-5 justify-center'>
+                    <button onClick={sortByPrice} className='flex justify-between items-center border border-[#9538E2] text-[#9538E2] px-5 py-2 rounded-full'>Sort by Price <span><FaSort /></span></button>
+
+                    <button onClick={()=> {
+                        handleClearData();
+                        document.getElementById('my_modal_1').showModal();
+                    }}
+                    className='bg-[#9538E2] text-white px-5 py-2 rounded-full' disabled={totalPrice === 0}>Purchase</button>
+                </div>
 
                 <dialog id="my_modal_1" className="modal">
                 <div className="modal-box">

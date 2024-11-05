@@ -34,7 +34,7 @@ const WishList = () => {
     return (
         <>
         <div className='max-w-screen-2xl mx-auto flex justify-between items-center py-10'>
-            <h1 className='text-2xl font-bold'>WishList</h1>
+            <h1 className='px-5 lg:px-0 text-2xl font-bold'>WishList</h1>
         </div>
         <div className='max-w-screen-2xl mx-auto '>
             {
