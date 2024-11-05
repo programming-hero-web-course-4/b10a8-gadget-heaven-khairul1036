@@ -1,3 +1,5 @@
+import banner from '../assets/banner.jpg'
+
 
 const Banner = () => {
     return (
@@ -10,7 +12,7 @@ const Banner = () => {
             </div>
         </div>
         <div className="lg:w-1/2 mx-5 lg:mx-auto rounded-xl border-2 border-white bg-white bg-opacity-25 p-5 relative bottom-24 lg:bottom-52">
-            <img className="rounded-xl" src="src/assets/banner.jpg" alt="banner" />
+            <img className="rounded-xl" src={banner} alt="banner" />
         </div>
         </>
     );
