@@ -1,6 +1,6 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.css'
+import { StrictMode } from 'react';
+import { createRoot } from 'react-dom/client';
+import './index.css';
 import {
   createBrowserRouter,
   RouterProvider,
@@ -17,29 +17,28 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Root></Root>,
-    errorElement:<ErrorPage></ErrorPage>,
+    // errorElement:<ErrorPage></ErrorPage>,
     children:[
       {
-        path:'/',
+        path: '/',
         element: <Home></Home>,
       },
       {
-        path:'/product-details/:product_id',
-        element:<GadgetDetails></GadgetDetails>,
-        loader:()=>fetch('./products.json')
+        path: '/product-details/:product_id',
+        element: <GadgetDetails></GadgetDetails>,
       },
       {
-        path:'/statistics',
-        element:<Statistics></Statistics>,
+        path: '/statistics',
+        element: <Statistics></Statistics>,
       },
       {
-        path:'/dashboard',
-        element:<Dashboard></Dashboard>,
-        loader:()=>fetch('./products.json')
+        path: '/dashboard',
+        element: <Dashboard></Dashboard>,
+        loader: () => fetch('./products.json'),
       },
       {
-        path:'/contact',
-        element:<Contact></Contact>
+        path: '/contact',
+        element: <Contact></Contact>,
       }
     ]
   },
@@ -49,4 +48,4 @@ createRoot(document.getElementById('root')).render(
   <StrictMode>
     <RouterProvider router={router} />
   </StrictMode>,
-)
+);

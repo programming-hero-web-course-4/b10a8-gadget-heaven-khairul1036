@@ -1,11 +1,13 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import CartList from './CartList';
 import WishList from './WishList';
+import useDocumentTitle from './Hooks/Hook';
 
 const Dashboard = () => {
+    useDocumentTitle("Dashboard | Gadget Heaven");
 
     const [toggleBtn,setToggleBtn] = useState(true);
-
+    
     return (
         <>
         <div className="bg-[#9538E2] text-center py-16">

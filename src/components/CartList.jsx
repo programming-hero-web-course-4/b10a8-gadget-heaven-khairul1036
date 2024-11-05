@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useLoaderData } from 'react-router-dom';
+import { Link, useLoaderData, useLocation } from 'react-router-dom';
 import { clearCart, getStoredCartList, updateCartList } from './utility/addToDb';
 import { FaSort } from "react-icons/fa";
 import SingleCart from './SingleCart';
@@ -51,11 +51,12 @@ const CartList = () => {
                     <button onClick={sortByPrice}>Sort by Price</button>
                     <div><FaSort /></div>
                 </div>
+
                 <button onClick={()=> {
                     handleClearData();
                     document.getElementById('my_modal_1').showModal();
                 }}
-                className='bg-[#9538E2] text-white px-5 py-2 rounded-full hover:bg-transparent hover:text-[#9538E2] hover:border hover:border-[#9538E2]'>Purchase</button>
+                className='bg-[#9538E2] text-white px-5 py-2 rounded-full' disabled={totalPrice === 0}>Purchase</button>
 
                 <dialog id="my_modal_1" className="modal">
                 <div className="modal-box">
@@ -65,7 +66,7 @@ const CartList = () => {
                     <p className="text-center">Total: {totalPrice.toFixed(2)}</p>
                     <div className="modal-action">
                     <form method="dialog">
-                        <button className="btn">Close</button>
+                        <Link to='/'><button className="btn">Close</button></Link>
                     </form>
                     </div>
                 </div>
@@ -80,7 +81,7 @@ const CartList = () => {
 
         <ToastContainer
         position="top-center"
-        autoClose={5000}
+        autoClose={1000}
         hideProgressBar={false}
         newestOnTop={false}
         closeOnClick

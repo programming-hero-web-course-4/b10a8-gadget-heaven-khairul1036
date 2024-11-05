@@ -12,10 +12,14 @@ const getStoredCartList = () => {
 
 const addToStoredCartList = (id) => {
     const storedList = getStoredCartList();
-
-    storedList.push(id);
-    const storedListStr = JSON.stringify(storedList);
-    localStorage.setItem('cart-list',storedListStr);
+    if(storedList.includes(id)){
+        return;
+    }
+    else{
+        storedList.push(id);
+        const storedListStr = JSON.stringify(storedList);
+        localStorage.setItem('cart-list',storedListStr);
+    }
 }
 
 const updateCartList = (cartList) => {
@@ -40,9 +44,14 @@ const getStoredWishList = () => {
 const addToStoredWishList = (id) => {
     const storedWishList = getStoredWishList();
 
-    storedWishList.push(id);
-    const storedWishListStr = JSON.stringify(storedWishList);
-    localStorage.setItem('wish-list', storedWishListStr);
+    if(storedWishList.includes(id)){
+        return;
+    }
+    else{
+        storedWishList.push(id);
+        const storedWishListStr = JSON.stringify(storedWishList);
+        localStorage.setItem('wish-list', storedWishListStr);
+    }
 }
 
 const updateWishList = (wishList) => {

@@ -11,8 +11,11 @@ import {
   XAxis,
   YAxis,
 } from "recharts";
+import useDocumentTitle from './Hooks/Hook';
 
 const Statistics = () => {
+
+  useDocumentTitle("Statistics | Gadget Heaven");
 
     const [data, setData] = useState([]);
     useEffect(()=>{

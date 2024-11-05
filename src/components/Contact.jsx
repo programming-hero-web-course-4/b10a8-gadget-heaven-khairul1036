@@ -1,6 +1,9 @@
 import React from 'react';
+import useDocumentTitle from './Hooks/Hook';
 
 const Contact = () => {
+    useDocumentTitle("Contact | Gadget Heaven");
+
     return (
         <>
         <div className="bg-[#9538E2] text-center py-16">
