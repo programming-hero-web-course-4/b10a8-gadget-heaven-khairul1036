@@ -1,21 +1,21 @@
 [
     {
       "product_id": "GAD001",
-      "product_title": "Smartphone X12",
-      "product_image": "https://i.ibb.co.com/7vD9BS2/Smartphone-X12.jpg",
-      "category": "Smartphones",
-      "price": 799.99,
-      "description": "A powerful smartphone with a stunning display and excellent camera quality.",
+      "product_title": "Professional Laptop WorkPro 17",
+      "product_image": "https://i.ibb.co.com/LQCBP4J/Professional-Laptop-Work-Pro-17.png",
+      "category": "Laptops",
+      "price": 1499.99,
+      "description": "Professional-grade laptop with high-end performance for multitasking and heavy workloads.",
       "specification": [
-        "6.5-inch OLED Display",
-        "128GB Storage",
-        "12MP Rear Camera",
-        "5G Enabled",
-        "4000mAh Battery"
+        "17-inch 4K UHD Display",
+        "Intel Core i9 Processor",
+        "32GB RAM",
+        "1TB SSD",
+        "NVIDIA Quadro Graphics"
       ],
-      "availability": true,
-      "rating": 3.5,
-      "warranty_period": "2 years"
+      "availability": false,
+      "rating": 4.6,
+      "warranty_period": "3 years"
     },
     {
       "product_id": "GAD002",
@@ -145,21 +145,21 @@
     },
     {
       "product_id": "GAD009",
-      "product_title": "Professional Laptop WorkPro 17",
-      "product_image": "https://i.ibb.co.com/LQCBP4J/Professional-Laptop-Work-Pro-17.png",
-      "category": "Laptops",
-      "price": 1499.99,
-      "description": "Professional-grade laptop with high-end performance for multitasking and heavy workloads.",
+      "product_title": "Smartphone X12",
+      "product_image": "https://i.ibb.co.com/7vD9BS2/Smartphone-X12.jpg",
+      "category": "Smartphones",
+      "price": 799.99,
+      "description": "A powerful smartphone with a stunning display and excellent camera quality.",
       "specification": [
-        "17-inch 4K UHD Display",
-        "Intel Core i9 Processor",
-        "32GB RAM",
-        "1TB SSD",
-        "NVIDIA Quadro Graphics"
+        "6.5-inch OLED Display",
+        "128GB Storage",
+        "12MP Rear Camera",
+        "5G Enabled",
+        "4000mAh Battery"
       ],
-      "availability": false,
-      "rating": 4.6,
-      "warranty_period": "3 years"
+      "availability": true,
+      "rating": 3.5,
+      "warranty_period": "2 years"
     },
     {
       "product_id": "GAD0010",

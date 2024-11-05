@@ -59,7 +59,10 @@ const Products = () => {
         .then(data=>setProducts(data))
     },[]);
 
-    const handleCategory = (category,bool) => {
+    const [activeCategory, setActiveCategory] = useState("AllProducts");
+
+    const handleCategoryClick = (category) => {
+        setActiveCategory(category);
         if(category==='AllProducts'){
             setCurrProducts(products);
         }
@@ -67,7 +70,8 @@ const Products = () => {
             const categoryItems = products.filter(product=>product.category===category);
             setCurrProducts(categoryItems);
         }
-    }
+        // setCurrProducts(newFilteredProducts);
+    };
 
     return (
         <>
@@ -76,9 +80,12 @@ const Products = () => {
             <div className="flex gap-10">
                 <div className="w-2/12">
                     <div className="bg-white rounded-xl p-5">
-                        {
-                            productsCategory.map(categories=><Category key={categories.id} categories={categories} handleCategory={handleCategory}></Category>)
-                        }
+                    {productsCategory.map((category) => (
+                            <div onClick={() => handleCategoryClick(category.category)} 
+                            className={`my-6 px-5 py-3 rounded-full cursor-pointer hover:bg-[#9538E2] text-gray-600 hover:text-white ${activeCategory === category.category ? ' bg-[#9538E2] text-white' : ' bg-gray-200'}`}>
+                                <button key={category.id}>{category.name}</button>
+                            </div>
+                    ))}
                     </div>
                 </div>
                 <div className="w-10/12 grid grid-cols-3 gap-10">

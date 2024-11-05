@@ -33,6 +33,7 @@ const GadgetDetails = () => {
     }
 
     const handleWishListButton = (product_id) =>{
+        toast.success("Item added to Wish-List")
         addToStoredWishList(product_id)
         // setCartCount(cartCount+1);       
     }

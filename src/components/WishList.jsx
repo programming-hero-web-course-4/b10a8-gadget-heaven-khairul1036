@@ -3,6 +3,8 @@ import { addToStoredWishList, getStoredWishList, updateWishList } from './utilit
 import { useLoaderData } from 'react-router-dom';
 import SingleWishList from './SingleWishList';
 import Empty from './Empty';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const WishList = () => {
     const products = useLoaderData();
@@ -15,6 +17,7 @@ const WishList = () => {
     },[])
 
     const handleDeleteWishListItem = (product_id) =>{
+        toast.warning('Wish Item Deleted')
         const storedWishList = getStoredWishList();
         const updatedWishList = storedWishList.filter(id => id !== product_id);
         updateWishList(updatedWishList)
@@ -32,6 +35,19 @@ const WishList = () => {
                 wishListItems.length===0?(<Empty></Empty>):(wishListItems.map(wishItem=> <SingleWishList key={wishItem.product_id} wishItem={wishItem} handleDeleteWishListItem={handleDeleteWishListItem}></SingleWishList>))
             }
         </div>
+
+        <ToastContainer
+        position="top-center"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="light"
+        />
         </>
     );
 };
